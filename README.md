@@ -21,7 +21,9 @@ The script is capable of:
 ## How It Works
 
 1- **Initialization**: The script starts with the main() function, which defines the job title (jobTitle), the number of items per page (num_items), and initializes the process of scraping by retrieving the website structure.
+
 2- **Scraping Data**: The script loops through the pages of job listings, making HTTP requests with headers and parameters, including the job title, page number, and offset. It retries requests if they fail, and extracts job-related data from the JSON response, such as identifiers, geographical features, chronological features, company information, and job details.
+
 3- **Data Saving**: The script defines the CSV file path and checks whether the file exists. If not, it creates the file and writes the header. It saves the job data to the CSV file using a pipe | delimiter. A message is printed to confirm successful data saving.
 
 ## Parammmeters
